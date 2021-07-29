@@ -19,7 +19,7 @@ namespace Random_Password_Generator
 
 		private static string GeneratePassword(int passwordLength)
 		{
-			Random random = new Random();
+			Random random = new();
 			char[] buffer = new char[passwordLength];
 			for (int i = 0; i < passwordLength; i++)
 				buffer[i] = (char)('a' + random.Next(0, 26));
